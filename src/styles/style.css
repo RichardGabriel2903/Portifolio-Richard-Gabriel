@@ -1,4 +1,3 @@
-/* Definição de Variáveis */
 :root {
     --primary-content-bg: #000000; /* Preto para o fundo da caixa central */
     --secondary-color: #1a1a1a; /* Cinza escuro para header/habilidades */
@@ -10,15 +9,6 @@
     --gradient-bottom-color: #666664; /* Amarelo (Golden) */
 }
 
-/* Estilos para o Modo Claro (manter comentado) */
-/* .light-mode {
-    --site-background-color: #ffffff;
-    --primary-content-bg: #f0f0f0;
-    --secondary-color: #e0e0e0;
-    --text-color: #333333;
-} */
-
-/* Reset Básico e Fontes */
 * {
     margin: 0;
     padding: 0;
@@ -30,9 +20,8 @@ body {
     color: var(--text-color);
     transition: background-color 0.6s, color 0.6s;
     
-    /* GRADIENTE: Do preto (topo) para o amarelo (em 50% da tela) */
     background: linear-gradient(
-        to top, /* Direção correta: do topo para baixo */
+        to top, 
         var(--gradient-top-color) 3%,
         var(--gradient-bottom-color) 50%
     );
@@ -44,11 +33,6 @@ body {
     color: var(--primary-content-bg);
     background: cyan;
 }
-
-/* ---------------------------------------------------------------------- */
-/* 📦 Layout Principal (Header e Wrapper) */
-/* ---------------------------------------------------------------------- */
-
 /* --- ESTILO DO CABEÇALHO (HEADER) --- */
 .header {
     background-color: var(--secondary-color);
@@ -83,11 +67,6 @@ body {
 .theme-toggle { background: none; border: none; color: var(--text-color); cursor: pointer; font-size: 18px; padding: 5px; }
 .hidden { display: none !important; }
 .section-title { color: var(--highlight-color); font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 50px; }
-
-
-/* ---------------------------------------------------------------------- */
-/* 💡 Seções de Conteúdo */
-/* ---------------------------------------------------------------------- */
 
 /* --- SEÇÃO SOBRE MIM --- */
 .about-section {
@@ -137,74 +116,73 @@ body {
 .download-item:hover .download-icon { background-color: #333333; }
 .download-item span { font-size: 18px; font-weight: 700; letter-spacing: 1px; }
 
-/* ---------------------------------------------------------------------- */
-/* 🚀 Carrossel de Projetos (3 Cards por Tela) - AJUSTADO */
-/* ---------------------------------------------------------------------- */
+/* Carrossel de Projetos (3 Cards por Tela) - AJUSTADO */
+
 .projects-section {
     background-color: var(--primary-content-bg);
     padding: 60px 50px 100px 50px;
 }
 .projects-section .section-title { margin-bottom: 50px; }
 
-/* --- ESTRUTURA DO CARROSSEL --- */
 .carousel-container {
     position: relative;
-    overflow: hidden; /* CRÍTICO: Esconde o que sai da área de visualização */
+    overflow: hidden; 
     margin: 0 40px;
 }
 
 .carousel-track {
-    display: flex; /* CRÍTICO: Coloca os cards em linha */
+    display: flex;
     transition: transform 0.3s ease-in-out;
-    flex-wrap: nowrap; /* CRÍTICO: Impede que os cards quebrem para a linha de baixo */
-    padding: 0; /* Removido padding, será adicionado no margin/gap do card */
-    gap: 30px; /* Espaçamento ENTRE os cards */
+    flex-wrap: nowrap; 
+    padding: 0; 
+    gap: 30px;
     
-    /* Importante: O track não define largura total, ele cresce com os cards */
 }
 
-/* * CLASSE .project-slide FOI REMOVIDA
- * Agora, cada .project-card é responsável por sua largura, garantindo 3 por tela.
-*/
 
 /* --- ESTILOS DO CARD INDIVIDUAL --- */
 .project-card {
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-    padding: 30px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-    /* * CRÍTICO: Define que o card deve ocupar 1/3 do espaço visível, 
-     * subtraindo o gap que é de 30px (metade do gap entre cards).
-     * Calculamos o espaço para 3 itens, subtraindo 2 gaps (2 * 30px = 60px)
-     */
-    flex: 0 0 calc((100% - 60px) / 3); 
-    flex-shrink: 0; /* Impede que o card encolha */
-    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  flex: 0 0 calc((100% - 60px) / 3);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .project-card {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-card {
+    flex: 0 0 100%;
+  }
 }
 
 .card-title { color: var(--highlight-color); font-size: 24px; font-weight: 700; margin-bottom: 20px; min-height: 60px; }
 .card-description { font-size: 16px; line-height: 1.6; text-align: left; margin-top: auto; }
 
-/* * O JavaScript agora deve calcular a rolagem usando a largura do .project-card 
- * MAIS o valor do GAP (30px), para garantir que o próximo card comece na borda.
- */
  
  /* --- IMAGENS E ÍCONES --- */
 .card-image-box {
-    width: 200px; /* Ajustado para caber em 3 colunas */
-    height: 200px; /* Ajustado para caber em 3 colunas */
-    border-radius: 10px;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  aspect-ratio: 16 / 9;   
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 .color-yellow { background-color: #ffc700; }
 .color-pink { background-color: #f7a9cf; }
@@ -233,21 +211,18 @@ body {
 .prev-btn { left: 0; }
 .next-btn { right: 0; }
 
-/* ---------------------------------------------------------------------- */
-/* 📞 SEÇÃO CONTATO (WhatsApp) */
-/* ---------------------------------------------------------------------- */
+/*  SEÇÃO CONTATO (WhatsApp) */
+
 .contact-section {
     background-color: var(--primary-content-bg);
     padding: 60px 50px 100px 50px;
 }
 
-/* Título (Usa o .section-title existente) */
 .contact-section .section-title {
     margin-bottom: 50px;
 }
 
 .contact-box {
-    /* Fundo ligeiramente diferente para o bloco de contato */
     background-color: var(--secondary-color);
     max-width: 900px;
     margin: 0 auto;
@@ -265,24 +240,24 @@ body {
 }
 
 .whatsapp-button {
-    display: inline-flex; /* Permite ícone e texto lado a lado */
+    display: inline-flex; 
     align-items: center;
     text-decoration: none;
     
-    background-color: #25D366; /* Cor oficial do WhatsApp */
+    background-color: #25D366;
     color: white;
     font-size: 22px;
     font-weight: 600;
     
     padding: 15px 40px;
-    border-radius: 50px; /* Bordas arredondadas (pílula) */
+    border-radius: 50px;
     
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .whatsapp-button:hover {
-    background-color: #128C7E; /* Tom escuro no hover */
-    transform: translateY(-2px); /* Efeito de leve levantamento */
+    background-color: #128C7E;
+    transform: translateY(-2px); 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -291,31 +266,26 @@ body {
     margin-right: 10px;
 }
 
-/* --- BOTÕES DENTRO DOS CARDS (Estilo Amarelo Neon) --- */
 .btn-group {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 15px; /* Aumenta um pouco a margem superior */
+    margin-top: 15px; 
     flex-wrap: wrap;
 }
 
-/* Estilo Base dos Links de Projeto/GitHub */
 .project-card .btn-group a {
-    /* Cor de fundo primária: Amarelo (Highlight) */
     background-color: var(--highlight-color); 
-    /* Cor do texto: Preto (Primary BG) */
     color: var(--primary-content-bg); 
     font-weight: bold;
     padding: 8px 12px;
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.2s;
-    box-shadow: 0 0 10px rgba(255, 199, 0, 0.5); /* Efeito Neon Amarelo */
+    box-shadow: 0 0 10px rgba(255, 199, 0, 0.5); 
 }
 
 .project-card .btn-group a:hover {
-    /* Amarelo ligeiramente mais escuro no hover */
     background-color: #e6b800; 
     transform: scale(1.05);
 }
@@ -330,8 +300,215 @@ body {
 }
 
 .card-description {
-    font-size: 14px; /* Geralmente menor para caber no card */
+    font-size: 14px; 
     line-height: 1.5;
     text-align: justify;
     margin-top: 10px;
+}
+
+/* ====================== MOBILE (≤ 640px) — RESPONSIVO GERAL ====================== */
+@media (max-width: 640px) {
+
+  .header {
+    padding: 10px 16px;
+    flex-direction: column; 
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;        
+    gap: 8px 12px;
+    justify-content: center;
+  }
+  .nav-menu a {
+    margin-left: 0;           
+    font-size: 13px;
+    opacity: 1;
+  }
+
+  .settings {
+    justify-content: center;
+  }
+  .language-switcher img.flag {
+    width: 22px;
+    height: 16px;
+    margin-left: 6px;
+  }
+
+  .main-content-wrapper {
+    padding-top: 120px;
+    box-shadow: none;       
+  }
+
+  /* ---------- Títulos de seção ---------- */
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  /* ---------- Seção SOBRE MIM ---------- */
+  .about-section {
+    flex-direction: column;     
+    padding: 24px 20px 48px 20px;
+    gap: 20px;
+    align-items: center;          
+    text-align: center;
+  }
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    text-align: justify;        
+  }
+  .about-image { 
+    padding-top: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .about-image img {
+    max-width: 80vw;             
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.45);
+  }
+
+  /* ---------- Seção HABILIDADES ---------- */
+  .skills-section {
+    padding: 36px 20px 56px 20px;
+  }
+  .skills-grid {
+    display: grid !important; 
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding: 20px;
+    justify-items: center;
+  }
+  .skill-item {
+    width: 100%;
+    max-width: 220px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.03);
+  }
+  .skill-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .skill-label {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .2px;
+  }
+
+  /* ---------- Seção DOWNLOAD ---------- */
+  .download-section {
+    padding: 0 20px 64px 20px;
+  }
+  .download-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .download-item {
+    gap: 6px;
+  }
+  .download-icon {
+    width: 90px;
+    height: 90px;
+    padding: 16px;
+    margin-bottom: 8px;
+  }
+  .download-item span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .2px;
+  }
+
+  /* ---------- Seção PROJETOS / CARROSSEL ---------- */
+  .projects-section {
+    padding: 40px 16px 72px 16px;
+  }
+  .carousel-container {
+    margin: 0 8px;           
+  }
+  .carousel-track {
+    gap: 16px;                     
+  }
+  .project-card {
+    flex: 0 0 100%;               
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 20px;
+    min-height: auto;            
+    margin-bottom: 12px;
+  }
+  .card-image-box {
+    aspect-ratio: 16/9;           
+    border-radius: 10px;
+  }
+  .project-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+  .card-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .btn-group {
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .project-card .btn-group a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .carousel-nav {
+    font-size: 18px;
+    padding: 10px 8px;
+    top: 45%;
+  }
+
+  /* ---------- Seção CONTATO ---------- */
+  .contact-section {
+    padding: 40px 16px 72px 16px;
+  }
+  .contact-box {
+    padding: 28px 18px;
+  }
+  .contact-message {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .whatsapp-button {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+  .whatsapp-button i {
+    font-size: 20px;
+    margin-right: 8px;
+  }
 }
