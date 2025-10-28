@@ -25,23 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "download-pt": "PORTUGUÊS",
       "download-en": "ENGLISH",
       "projects-title": "PROJETOS PESSOAIS",
-      "proj-financeiro": "Aplicativo Financeiro",
-      "proj-financeiro-desc":
-        "Descrição detalhada do Aplicativo Financeiro (Adaptada)",
+      "hp-game": "Jogo do Harry Potter",
+      "hp-game-desc":
+        "Jogo de Pedra, Papel e Tesoura do Harry Potter. O jogador enfrenta Voldemort escolhendo entre três feitiços, cada um com suas propriedades, com pontuação dinâmica e efeitos imersivos.",
       "proj-guess-game": "Jogo de adivinhação",
       "proj-guess-game-desc":
         "Um jogo interativo em JavaScript onde o jogador tenta adivinhar um número entre 1 e 100, recebendo dicas se o valor é maior ou menor, com contador de tentativas e recorde pessoal.",
-      "proj-kanban": "Kanban",
-      "proj-kanban-desc": "Descrição detalhada do Kanban (Adaptada)",
-      "proj-memory-game": "Jogo da Memória",
-      "proj-memory-game-desc":
-        "Descrição detalhada do Jogo da Memória (Adaptada)",
-      "proj-doce-encanto": "Doce Encanto",
-      "proj-doce-encanto-desc":
-        "Descrição detalhada do Doce Encanto (Adaptada)",
-      "proj-futebol": "Onde Assistir Futebol",
-      "proj-futebol-desc":
-        "Descrição detalhada do Onde Assistir Futebol (Adaptada)",
+      "mood-tracker": "Acompanhamento de humor",
+      "mood-tracker-desc": "Aplicativo web para monitorar e registrar o humor diário, permitindo aos usuários acompanhar seu bem-estar emocional ao longo do tempo por meio de uma interface simples e intuitiva.",
       "btn-ver-projeto": "Ver Projeto",
       "btn-ver-github": "Ver GitHub",
       "contact-title": "CONTATO",
@@ -74,23 +65,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "download-pt": "PORTUGUÊS",
       "download-en": "ENGLISH",
       "projects-title": "PERSONAL PROJECTS",
-      "proj-financeiro": "Financial App",
-      "proj-financeiro-desc":
-        "Detailed description of the Financial App (Adapted)",
+      "hp-game": "Harry Potter Game",
+      "hp-game-desc":
+        "Harry Potter Rock, Paper, Scissors Game. Face off against Voldemort by choosing one of three spells, each with its own powers, dynamic scoring, and immersive effects.",
       "proj-guess-game": "Guess Game",
       "proj-guess-game-desc":
         "An interactive JavaScript game where the player tries to guess a number between 1 and 100, receiving hints if the value is higher or lower, with attempt counter and personal record.",
-      "proj-kanban": "Kanban",
-      "proj-kanban-desc": "Detailed description of Kanban (Adapted)",
-      "proj-memory-game": "Memory Game",
-      "proj-memory-game-desc":
-        "Detailed description of the Memory Game (Adapted)",
-      "proj-doce-encanto": "Doce Encanto",
-      "proj-doce-encanto-desc":
-        "Detailed description of Doce Encanto (Adapted)",
-      "proj-futebol": "Where to Watch Football",
-      "proj-futebol-desc":
-        "Detailed description of Where to Watch Football (Adapted)",
+      "mood-tracker": "Humor Tracker",
+      "mood-tracker-desc": "A web app to track and log your daily mood, helping users follow their emotional well-being over time through a simple and intuitive interface. The app was developed using php.",
       "btn-ver-projeto": "View Project",
       "btn-ver-github": "View GitHub",
       "contact-title": "CONTACT",
