@@ -71,7 +71,7 @@ body {
 /* --- SEÇÃO SOBRE MIM --- */
 .about-section {
     display: flex;
-    padding: 40px 50px 80px 50px;
+    padding: 40px 50px 30px 50px;
     gap: 80px;
     align-items: flex-start;
 }
@@ -85,7 +85,7 @@ body {
 /* --- SEÇÃO HABILIDADES --- */
 .skills-section {
     background-color: var(--primary-content-bg);
-    padding: 60px 50px 100px 50px;
+    padding: 0px 50px 0px 50px;
 }
 .skills-grid {
     background-color: var(--secondary-color);
@@ -105,9 +105,9 @@ body {
 /* --- SEÇÃO DOWNLOAD CURRÍCULO --- */
 .download-section {
     background-color: var(--primary-content-bg);
-    padding: 0 50px 100px 50px; 
+    padding: 0 50px 20px 50px; 
 }
-.download-title { margin-top: 50px; margin-bottom: 40px; }
+.download-title { margin-top: 20px; margin-bottom: 20px; }
 .download-links { display: flex; justify-content: center; gap: 50px; }
 .download-item { display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none; color: var(--text-color); transition: color 0.3s; }
 .download-item:hover { color: var(--highlight-color); }
@@ -120,7 +120,7 @@ body {
 
 .projects-section {
     background-color: var(--primary-content-bg);
-    padding: 60px 50px 100px 50px;
+    padding: 60px 50px 0px 50px;
 }
 .projects-section .section-title { margin-bottom: 50px; }
 

@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-message":
         "Entre em contato comigo pelo WhatsApp clicando abaixo",
       "whatsapp-btn": "Fale comigo no WhatsApp",
+      "memory-game": "Jogo da Memória",
+      "memory-game-desc":
+        "Jogo da Memória das linguagens de programação. Os jogadores viram cartas para encontrar pares de linguagens correspondentes, testando memória e concentração",
     },
     en: {
       "header-title":
@@ -78,6 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-title": "CONTACT",
       "contact-message": "Contact me on WhatsApp by clicking below",
       "whatsapp-btn": "Chat with me on WhatsApp",
+      "memory-game": "Memory game",
+      "memory-game-desc":
+        "Programming Languages Memory Game. Players flip cards to find matching pairs of programming languages, testing memory and concentration",
+    
     },
   };
   function updateLanguage(lang) {
