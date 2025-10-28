@@ -47,22 +47,22 @@
       <main>
         <section class="about-section" id="sobre">
           <div class="about-content">
-            <h1 class="about-title">SOBRE MIM</h1>
+            <h1 class="about-title" data-i18n-key="about-title">SOBRE MIM</h1>
 
             <div class="about-text" data-content="pt">
-              <p>
+              <p data-i18n-key="about-text-pt-1">
                 Olá! Sou Richard Gabriel, 20 anos. Formado em Análise e
                 Desenvolvimento de Sistemas, com pós-graduações em andamento em
                 Inteligência Artificial e Desenvolvimento e Testes de Software.
               </p>
-              <p>
+              <p data-i18n-key="about-text-pt-2">
                 Atuo como Analista de Testes e Desenvolvimento de Software, com
                 expertise em: testes (funcionais, integração, regressão),
                 automação, desenvolvimento Java, JUnit, Mockito e SCRUM. Possuo
                 vivência em bancos de dados SQL, administração de sistemas
                 (Windows/Linux) e boas práticas de QA.
               </p>
-              <p>
+              <p data-i18n-key="about-text-pt-3">
                 Profissional proativo e analítico, focado na entrega de valor e
                 excelência em qualidade de software, automação e análise de
                 dados. Busco consolidar minha carreira na tecnologia, promovendo
@@ -71,16 +71,13 @@
             </div>
 
             <div class="about-text hidden" data-content="en">
-              <p>
+              <p data-i18n-key="about-text-en-1">
                 Hello! My name is Richard Gabriel, I am 20 years old, I have a
                 degree in Systems Analysis and Development and I am currently
                 pursuing post-graduate studies in Artificial Intelligence, and
-                in Software Development and Testing. I am a proactive, outgoing
-                and committed professional with continuous improvement, always
-                seeking new opportunities to apply and expand my knowledge in
-                technology.
+                in Software Development and Testing.
               </p>
-              <p>
+              <p data-i18n-key="about-text-en-2">
                 I work as a Software Testing and Development Analyst, with
                 experience in functional, integration and regression testing,
                 automation, development in Java, JUnit, Mockito and agile
@@ -88,7 +85,7 @@
                 databases, Windows and Linux system administration and good QA
                 practices.
               </p>
-              <p>
+              <p data-i18n-key="about-text-en-3">
                 With an analytical view and focus on results, I seek to
                 consolidate my career in the area of technology, combining
                 software quality, automation and data analysis, always with the
@@ -107,7 +104,9 @@
         </section>
 
         <section class="skills-section" id="experiencia">
-          <h2 class="section-title">HABILIDADES</h2>
+          <h2 class="section-title" data-i18n-key="skills-title">
+            HABILIDADES
+          </h2>
 
           <div class="skills-grid">
             <div class="skill-item">
@@ -115,57 +114,65 @@
                 src="src/assets/ChatGPT Image 16 de out. de 2025, 13_47_47.png"
                 alt="Java"
                 class="skill-icon"
-              />
-              <br />
-              <span class="skill-label">Java</span>
+              /><br /><span class="skill-label" data-i18n-key="skill-java"
+                >Java</span
+              >
             </div>
-
             <div class="skill-item">
               <img
                 src="src/assets/Junit5.png"
                 alt="Junit5"
                 class="skill-icon"
-              />
-              <br />
-              <span class="skill-label">Junit 5</span>
+              /><br /><span class="skill-label" data-i18n-key="skill-junit"
+                >Junit 5</span
+              >
             </div>
-
             <div class="skill-item">
               <img
                 src="src/assets/MockitoPNG-removebg-preview.png"
                 alt="Mockito"
                 class="skill-icon"
-              />
-              <br />
-              <span class="skill-label">Mockito</span>
+              /><br /><span class="skill-label" data-i18n-key="skill-mockito"
+                >Mockito</span
+              >
             </div>
-
             <div class="skill-item">
-              <img src="src/assets/SQL.png" alt="SQL" class="skill-icon" />
-              <br />
-              <span class="skill-label">SQL</span>
+              <img
+                src="src/assets/SQL.png"
+                alt="SQL"
+                class="skill-icon"
+              /><br /><span class="skill-label" data-i18n-key="skill-sql"
+                >SQL</span
+              >
             </div>
-
             <div class="skill-item">
               <img
                 src="src/assets/Docker-removebg-preview.png"
                 alt="Docker"
                 class="skill-icon"
-              />
-              <br />
-              <span class="skill-label">Docker</span>
+              /><br /><span class="skill-label" data-i18n-key="skill-docker"
+                >Docker</span
+              >
             </div>
-
             <div class="skill-item">
-              <img src="src/assets/Robot.png" alt="QA" class="skill-icon" />
-              <br />
-              <span class="skill-label">Robot Framework</span>
+              <img
+                src="src/assets/Robot.png"
+                alt="QA"
+                class="skill-icon"
+              /><br /><span class="skill-label" data-i18n-key="skill-robot"
+                >Robot Framework</span
+              >
             </div>
           </div>
         </section>
 
         <section class="download-section">
-          <h2 class="section-title download-title">DOWNLOAD - CURRÍCULO</h2>
+          <h2
+            class="section-title download-title"
+            data-i18n-key="download-title"
+          >
+            DOWNLOAD - CURRÍCULO
+          </h2>
 
           <div class="download-links">
             <a
@@ -178,9 +185,8 @@
                 alt="Ícone de Currículo"
                 class="download-icon"
               />
-              <span>PORTUGUÊS</span>
+              <span data-i18n-key="download-pt">PORTUGUÊS</span>
             </a>
-
             <a
               href="src/assets/RichardsResume.pdf"
               download="RichardsResume.pdf"
@@ -191,46 +197,26 @@
                 alt="Ícone de Currículo"
                 class="download-icon"
               />
-              <span>ENGLISH</span>
+              <span data-i18n-key="download-en">ENGLISH</span>
             </a>
           </div>
         </section>
 
         <section class="projects-section" id="projetos">
-          <h2 class="section-title">PROJETOS PESSOAIS</h2>
+          <h2 class="section-title" data-i18n-key="projects-title">
+            PROJETOS PESSOAIS
+          </h2>
 
           <div class="carousel-container">
             <button class="carousel-nav prev-btn">
               <i class="fas fa-chevron-left"></i>
             </button>
-
             <div class="carousel-track">
-              <!-- 1 -->
+              <!-- Projeto 1 -->
               <div class="project-card">
-                <h3 class="card-title">Snake Game</h3>
-                <div class="card-image-box color-yellow">
-                  <img
-                    src="img/jogo-snake.png"
-                    alt="Snake Game"
-                    class="project-image"
-                  />
-                </div>
-                <p class="card-description">
-                  Descrição detalhada do Snake Game (Adaptada).
-                </p>
-                <div class="btn-group">
-                  <a href="#" class="btn-ver-projeto" target="_blank"
-                    >Ver Projeto</a
-                  >
-                  <a href="#" class="btn-ver-github" target="_blank"
-                    >Ver GitHub</a
-                  >
-                </div>
-              </div>
-
-              <!-- 2 -->
-              <div class="project-card">
-                <h3 class="card-title">Aplicativo Financeiro</h3>
+                <h3 class="card-title" data-i18n-key="proj-financeiro">
+                  Aplicativo Financeiro
+                </h3>
                 <div class="card-image-box color-pink">
                   <img
                     src="img/aplicativo-financeiro.png"
@@ -238,22 +224,72 @@
                     class="project-image"
                   />
                 </div>
-                <p class="card-description">
+                <p
+                  class="card-description"
+                  data-i18n-key="proj-financeiro-desc"
+                >
                   Descrição detalhada do Aplicativo Financeiro (Adaptada).
                 </p>
                 <div class="btn-group">
-                  <a href="#" class="btn-ver-projeto" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-projeto"
+                    target="_blank"
+                    data-i18n-key="btn-ver-projeto"
                     >Ver Projeto</a
                   >
-                  <a href="#" class="btn-ver-github" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-github"
+                    target="_blank"
+                    data-i18n-key="btn-ver-github"
                     >Ver GitHub</a
                   >
                 </div>
               </div>
 
-              <!-- 3 -->
+              <!-- Projeto 2 -->
               <div class="project-card">
-                <h3 class="card-title">Kanban</h3>
+                <h3 class="card-title" data-i18n-key="proj-guess-game">
+                  Jogo de adivinhação
+                </h3>
+                <div class="card-image-box color-yellow">
+                  <img
+                    src="/src/assets/GuessGame.jpg"
+                    alt="Guess Game"
+                    class="project-image"
+                  />
+                </div>
+                <p
+                  class="card-description"
+                  data-i18n-key="proj-guess-game-desc"
+                >
+                  Um jogo interativo em JavaScript onde o jogador tenta
+                  adivinhar um número entre 1 e 100, recebendo dicas se o valor
+                  é maior ou menor, com contador de tentativas e recorde
+                  pessoal.
+                </p>
+                <div class="btn-group">
+                  <a
+                    href="https://richardgabriel2903.github.io/guess-game/"
+                    class="btn-ver-projeto"
+                    target="_blank"
+                    data-i18n-key="btn-ver-projeto"
+                    >Ver Projeto</a
+                  >
+                  <a
+                    href="https://github.com/RichardGabriel2903/guess-game"
+                    class="btn-ver-github"
+                    target="_blank"
+                    data-i18n-key="btn-ver-github"
+                    >Ver GitHub</a
+                  >
+                </div>
+              </div>
+
+              <!-- Projeto 3 -->
+              <div class="project-card">
+                <h3 class="card-title" data-i18n-key="proj-kanban">Kanban</h3>
                 <div class="card-image-box color-green">
                   <img
                     src="img/kanban.png"
@@ -261,22 +297,32 @@
                     class="project-image"
                   />
                 </div>
-                <p class="card-description">
+                <p class="card-description" data-i18n-key="proj-kanban-desc">
                   Descrição detalhada do Kanban (Adaptada).
                 </p>
                 <div class="btn-group">
-                  <a href="#" class="btn-ver-projeto" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-projeto"
+                    target="_blank"
+                    data-i18n-key="btn-ver-projeto"
                     >Ver Projeto</a
                   >
-                  <a href="#" class="btn-ver-github" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-github"
+                    target="_blank"
+                    data-i18n-key="btn-ver-github"
                     >Ver GitHub</a
                   >
                 </div>
               </div>
 
-              <!-- 4 -->
+              <!-- Projeto 4 -->
               <div class="project-card">
-                <h3 class="card-title">Jogo da Memória</h3>
+                <h3 class="card-title" data-i18n-key="proj-memory-game">
+                  Jogo da Memória
+                </h3>
                 <div class="card-image-box color-yellow">
                   <img
                     src="img/jogo-memoria.png"
@@ -284,22 +330,35 @@
                     class="project-image"
                   />
                 </div>
-                <p class="card-description">
+                <p
+                  class="card-description"
+                  data-i18n-key="proj-memory-game-desc"
+                >
                   Descrição detalhada do Jogo da Memória (Adaptada).
                 </p>
                 <div class="btn-group">
-                  <a href="#" class="btn-ver-projeto" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-projeto"
+                    target="_blank"
+                    data-i18n-key="btn-ver-projeto"
                     >Ver Projeto</a
                   >
-                  <a href="#" class="btn-ver-github" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-github"
+                    target="_blank"
+                    data-i18n-key="btn-ver-github"
                     >Ver GitHub</a
                   >
                 </div>
               </div>
 
-              <!-- 5 -->
+              <!-- Projeto 5 -->
               <div class="project-card">
-                <h3 class="card-title">Doce Encanto</h3>
+                <h3 class="card-title" data-i18n-key="proj-doce-encanto">
+                  Doce Encanto
+                </h3>
                 <div class="card-image-box color-pink">
                   <img
                     src="img/doce-encanto-banner.png"
@@ -307,22 +366,35 @@
                     class="project-image"
                   />
                 </div>
-                <p class="card-description">
+                <p
+                  class="card-description"
+                  data-i18n-key="proj-doce-encanto-desc"
+                >
                   Descrição detalhada do Doce Encanto (Adaptada).
                 </p>
                 <div class="btn-group">
-                  <a href="#" class="btn-ver-projeto" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-projeto"
+                    target="_blank"
+                    data-i18n-key="btn-ver-projeto"
                     >Ver Projeto</a
                   >
-                  <a href="#" class="btn-ver-github" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-github"
+                    target="_blank"
+                    data-i18n-key="btn-ver-github"
                     >Ver GitHub</a
                   >
                 </div>
               </div>
 
-              <!-- 6 -->
+              <!-- Projeto 6 -->
               <div class="project-card">
-                <h3 class="card-title">Onde Assistir Futebol</h3>
+                <h3 class="card-title" data-i18n-key="proj-futebol">
+                  Onde Assistir Futebol
+                </h3>
                 <div class="card-image-box color-green">
                   <img
                     src="img/futebol-onde-assistir.png"
@@ -330,20 +402,27 @@
                     class="project-image"
                   />
                 </div>
-                <p class="card-description">
+                <p class="card-description" data-i18n-key="proj-futebol-desc">
                   Descrição detalhada do Onde Assistir Futebol (Adaptada).
                 </p>
                 <div class="btn-group">
-                  <a href="#" class="btn-ver-projeto" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-projeto"
+                    target="_blank"
+                    data-i18n-key="btn-ver-projeto"
                     >Ver Projeto</a
                   >
-                  <a href="#" class="btn-ver-github" target="_blank"
+                  <a
+                    href="#"
+                    class="btn-ver-github"
+                    target="_blank"
+                    data-i18n-key="btn-ver-github"
                     >Ver GitHub</a
                   >
                 </div>
               </div>
             </div>
-
             <button class="carousel-nav next-btn">
               <i class="fas fa-chevron-right"></i>
             </button>
@@ -351,10 +430,10 @@
         </section>
 
         <section class="contact-section" id="contato">
-          <h2 class="section-title">CONTATO</h2>
+          <h2 class="section-title" data-i18n-key="contact-title">CONTATO</h2>
 
           <div class="contact-box">
-            <p class="contact-message">
+            <p class="contact-message" data-i18n-key="contact-message">
               Entre em contato comigo pelo WhatsApp clicando abaixo
             </p>
 
@@ -362,6 +441,7 @@
               href="https://wa.me/5561982771249?text=Ol%C3%A1%20Richard%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA!"
               target="_blank"
               class="whatsapp-button"
+              data-i18n-key="whatsapp-btn"
             >
               <i class="fab fa-whatsapp"></i> Fale comigo no WhatsApp
             </a>
